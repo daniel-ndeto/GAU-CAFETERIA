@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React from "react";
 import { TbPlus, TbMinus } from "react-icons/tb";
 import { AiFillDelete } from "react-icons/ai";

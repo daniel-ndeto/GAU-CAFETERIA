@@ -10,7 +10,7 @@ app.use(express.json({ limit: "10mb" }));
 
 const PORT = process.env.PORT || 8080;
 // MONGODB CONNACTION
-// console.log(process.env.MONGODB_URL);
+//console.log(process.env.MONGODB_URL);
 mongoose.set("strictQuery", false);
 mongoose
   .connect(process.env.MONGODB_URL)
@@ -39,7 +39,7 @@ app.get("/", (req, res) => {
 });
 //sign up
 app.post("/signup", async (req, res) => {
-  // console.log(req.body);
+ // console.log(req.body);
   const { email } = req.body;
 
   userModel.findOne({ email: email }, (err, result) => {
@@ -128,7 +128,7 @@ app.post("/create-checkout-session", async (req, res) => {
             currency: "inr",
             product_data: {
               name: item.name,
-              // images : [item.image]
+             images : [item.image]
             },
             unit_amount: item.price * 100,
           },

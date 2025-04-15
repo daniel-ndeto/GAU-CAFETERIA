@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { useState } from "react";
 import loginSignupImage from "../assest/login-animation.gif";
 import { BiShow, BiHide } from "react-icons/bi";

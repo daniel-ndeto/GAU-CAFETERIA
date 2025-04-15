@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import loginSignupImage from "../assest/login-animation.gif";
 import { BiShow, BiHide } from "react-icons/bi";
@@ -5,6 +6,8 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-hot-toast";
 import { useDispatch, useSelector } from "react-redux";
 import { loginRedux } from "../redux/userSlice";
+
+/* eslint-disable */
 
 const Login = () => {
   const navigate = useNavigate();

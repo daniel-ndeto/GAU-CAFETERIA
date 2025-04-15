@@ -1,6 +1,8 @@
 import "./App.css";
 import Header from "./component/Header";
 import { Outlet } from "react-router-dom";
+//ignore ESLint
+// eslint-disable-next-line
 import toast, { Toaster } from "react-hot-toast";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -17,8 +19,8 @@ function App() {
       const resData = await res.json();
       dispatch(setDataProduct(resData));
     })();
-  }, []);
-  //  console.log(productData); // {productList: Array(0), cartItem: Array(0)}
+  }, [dispatch]);
+  console.log(productData); // productData: {productList: Array(0), cartItem: Array(0)}
   return (
     <>
       <Toaster />

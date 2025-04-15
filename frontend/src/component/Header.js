@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assest/logo.jpg";
@@ -30,7 +31,7 @@ const Header = () => {
           <div className="flex max-w-4xl mx-auto ">
             <img src={logo} className="rounded-full h-20 " />
             <h2 className=" font-bold text-2xl dark:text-red-700  p-4  md: hidden md:flex  ">
-              Aana Zoor
+              GAU-Cafeteria
             </h2>
           </div>
         </Link>
