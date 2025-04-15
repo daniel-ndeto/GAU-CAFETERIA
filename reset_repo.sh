@@ -29,3 +29,5 @@ echo "Pushing initial commit to remote repository..."
 git push -u origin "${BRANCH}"
 
 echo "Repository successfully reset and pushed to ${REMOTE_URL}!"
+
+## TO RUN USE : ./reset_repo.sh https://github.com/daniel-ndeto/GAU-CAFETERIA.git
